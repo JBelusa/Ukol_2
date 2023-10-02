@@ -8,7 +8,7 @@ public class Room {
     private int pricePerNight;
 
 
-//region Constructors
+//region Rooms Constructors
 
     public Room(int roomNumber, int numberOfBeds, boolean hasBalcony, boolean hasSeaView, int pricePerNight) {
         this.roomNumber = roomNumber;
@@ -19,7 +19,7 @@ public class Room {
     }
 //endregion
 
-//region Getters and Setters
+//region Room Getters and Setters
 
 
     public int getRoomNumber() {

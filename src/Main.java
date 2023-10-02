@@ -1,9 +1,12 @@
+import com.engeto.rooms.Guest;
 import com.engeto.rooms.Room;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
 
-        //region Room
+//region Room
         Room room1 = new Room(
                 1,
                 1,
@@ -29,8 +32,17 @@ public class Main {
         );
 
 //        System.out.println("místnost 3 má" + room3.getPricePerNight()+"ano");
-        //endregion
+//endregion
 
-
+//region Guest
+        Guest guest1 = new Guest(
+                "Adéla Malíková",
+                LocalDate.of(1993,3,13)
+                );
+        Guest guest2 = new Guest(
+                "Jan Dvořáček",
+                LocalDate.of(1995,5,5)
+        );
+//endregion
     }
 }
