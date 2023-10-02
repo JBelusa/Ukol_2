@@ -1,3 +1,4 @@
+import com.engeto.rooms.Booking;
 import com.engeto.rooms.Guest;
 import com.engeto.rooms.Room;
 
@@ -44,6 +45,16 @@ public class Main {
                 "Jan Dvořáček",
                 LocalDate.of(1995,5,5)
         );
+//endregion
+
+//region Booking
+        Booking booking1 = new Booking(room1,
+                guest1,
+                LocalDate.of(2021,7,15),
+                LocalDate.of(2021,7,24),
+                "pracovní"
+        );
+        System.out.println("místnost 3 má" + booking1.getGuest().getGuestName()+"ano");
 //endregion
     }
 }
