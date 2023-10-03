@@ -3,6 +3,8 @@ import com.engeto.rooms.Guest;
 import com.engeto.rooms.Room;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
@@ -34,7 +36,7 @@ public class Main {
         );
 
 //        System.out.println("místnost 3 má" + room3.getPricePerNight()+"ano");
-//endregion
+//endregions
 
 //region Guest
         Guest guest1 = new Guest(
@@ -45,16 +47,40 @@ public class Main {
                 "Jan Dvořáček",
                 LocalDate.of(1995,5,5)
         );
-//endregion
+//endregions
 
-//region Booking
+//region Bookings
         Booking booking1 = new Booking(room1,
                 guest1,
                 LocalDate.of(2021,7,15),
                 LocalDate.of(2021,7,24),
                 "pracovní"
         );
-        System.out.println("místnost 3 má" + booking1.getGuest().getGuestName()+"ano");
+
+
+//        System.out.println("místnost 3 má" + booking1.getGuest().getGuestName()+"ano");
 //endregion
+
+    List<Booking> listOfbookings = new ArrayList<>();
+
+    listOfbookings.add(booking1);
+
+    System.out.println("Pokoj číslo "
+                    +listOfbookings.get(0).getRoom().getRoomNumber()
+                    +" rezervován od "
+                    +listOfbookings.get(0).getStartDate()
+                    +" do "
+                    +listOfbookings.get(0).getEndDate()
+                    +" na jméno "
+                    +listOfbookings.get(0).getGuest().getGuestName()
+            );
+
+
+
+
+
+
     }
+
+
 }

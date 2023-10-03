@@ -14,7 +14,7 @@ public class Guest {
     }
 
 //endregion
-
+//region Guest Getters and Setters
     public String getGuestName() {
         return guestName;
     }
@@ -31,7 +31,7 @@ public class Guest {
         this.birthDate = birthDate;
     }
 
-//region Guest Getters and Setters
+
 
 //endregion
 }
