@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="701d272a-40fd-47c6-aaea-b50cbf4e369a" name="Changes" comment="listofbookings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/rooms/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/rooms/Booking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/rooms/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/rooms/Guest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/rooms/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/rooms/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696369044924</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="listofbookings">
+      <option name="closed" value="true" />
+      <created>1696374176618</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696374176618</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

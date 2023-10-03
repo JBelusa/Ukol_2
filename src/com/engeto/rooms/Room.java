@@ -63,6 +63,7 @@ public class Room {
     }
 //endregion
 
+   
     @Override
     public String toString() {
         return //"Firemní počítač: "+
