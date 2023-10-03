@@ -36,6 +36,9 @@ public class Main {
         );
 
         System.out.println(room1);
+        System.out.println(room2);
+        System.out.println(room3);
+
 
 //endregion
 
