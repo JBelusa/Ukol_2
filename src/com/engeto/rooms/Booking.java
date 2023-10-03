@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class Booking {
     private Room room;
     private Guest guest;
+    private Guest secondguest;
     private LocalDate startDate;
     private LocalDate endDate;
     private String vacationType;
@@ -20,6 +21,14 @@ public class Booking {
         this.vacationType = vacationType;
     }
 
+    public Booking(Room room, Guest guest, Guest secondguest, LocalDate startDate, LocalDate endDate, String vacationType) {
+        this.room = room;
+        this.guest = guest;
+        this.secondguest = secondguest;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.vacationType = vacationType;
+    }
 //endregion
 
 //region Booking Getters and Setters
@@ -38,6 +47,14 @@ public class Booking {
 
     public void setGuest(Guest guest) {
         this.guest = guest;
+    }
+
+    public Guest getSecondguest() {
+        return secondguest;
+    }
+
+    public void setSecondguest(Guest secondguest) {
+        this.secondguest = secondguest;
     }
 
     public LocalDate getStartDate() {
@@ -63,6 +80,7 @@ public class Booking {
     public void setVacationType(String vacationType) {
         this.vacationType = vacationType;
     }
+
 //endregion
 
 

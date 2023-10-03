@@ -35,8 +35,7 @@ public class Main {
                 2400
         );
 
-//        System.out.println("místnost 3 má" + room3.getPricePerNight()+"ano");
-//endregions
+//endregion
 
 //region Guest
         Guest guest1 = new Guest(
@@ -52,13 +51,20 @@ public class Main {
 //region Bookings
         Booking booking1 = new Booking(room1,
                 guest1,
-                LocalDate.of(2021,7,15),
-                LocalDate.of(2021,7,24),
+                LocalDate.of(2021,7,19),
+                LocalDate.of(2021,7,26),
+                "pracovní"
+        );
+
+        Booking booking2 = new Booking(room3,
+                guest1,
+                guest2,
+                LocalDate.of(2021,9,1),
+                LocalDate.of(2021,9,14),
                 "pracovní"
         );
 
 
-//        System.out.println("místnost 3 má" + booking1.getGuest().getGuestName()+"ano");
 //endregion
 
     List<Booking> listOfbookings = new ArrayList<>();
@@ -74,7 +80,19 @@ public class Main {
                     +" na jméno "
                     +listOfbookings.get(0).getGuest().getGuestName()
             );
-
+//-------------------
+    listOfbookings.add(booking2);
+        System.out.println("Pokoj číslo "
+                +listOfbookings.get(1).getRoom().getRoomNumber()
+                +" rezervován od "
+                +listOfbookings.get(1).getStartDate()
+                +" do "
+                +listOfbookings.get(1).getEndDate()
+                +" na jméno "
+                +listOfbookings.get(1).getGuest().getGuestName()
+                +" a "
+                +listOfbookings.get(1).getSecondguest().getGuestName()
+        );
 
 
 

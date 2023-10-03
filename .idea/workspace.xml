@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="701d272a-40fd-47c6-aaea-b50cbf4e369a" name="Changes" comment="Vytvoření bookingu">
+    <list default="true" id="701d272a-40fd-47c6-aaea-b50cbf4e369a" name="Changes" comment="listofbookings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/rooms/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/rooms/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/rooms/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/rooms/Booking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696290950428</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="listofbookings">
+      <option name="closed" value="true" />
+      <created>1696365795928</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696365795928</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -120,20 +128,26 @@
     <MESSAGE value="Pridani Guest" />
     <MESSAGE value="Pridani Definovani guests" />
     <MESSAGE value="Vytvoření bookingu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoření bookingu" />
+    <MESSAGE value="listofbookings" />
+    <option name="LAST_COMMIT_MESSAGE" value="listofbookings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>40</line>
+          <line>39</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>12</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
