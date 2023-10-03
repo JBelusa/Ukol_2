@@ -1,11 +1,13 @@
 package com.engeto.rooms;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Booking {
     private Room room;
     private Guest guest;
     private Guest secondguest;
+    private Guest thirdguest;
     private LocalDate startDate;
     private LocalDate endDate;
     private String vacationType;
@@ -22,6 +24,15 @@ public class Booking {
     }
 
     public Booking(Room room, Guest guest, Guest secondguest, LocalDate startDate, LocalDate endDate, String vacationType) {
+        this.room = room;
+        this.guest = guest;
+        this.secondguest = secondguest;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.vacationType = vacationType;
+    }
+
+    public Booking(Room room, Guest guest, Guest secondguest,Guest thirdguest, LocalDate startDate, LocalDate endDate, String vacationType) {
         this.room = room;
         this.guest = guest;
         this.secondguest = secondguest;
@@ -56,6 +67,7 @@ public class Booking {
     public void setSecondguest(Guest secondguest) {
         this.secondguest = secondguest;
     }
+
 
     public LocalDate getStartDate() {
         return startDate;

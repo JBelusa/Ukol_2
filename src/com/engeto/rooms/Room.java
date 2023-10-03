@@ -63,4 +63,10 @@ public class Room {
     }
 //endregion
 
+    @Override
+    public String toString() {
+        return //"Firemní počítač: "+
+                "Číslo pokoje:"+roomNumber+","+" Počet postelí "+numberOfBeds+","+" Má balkón? "+hasBalcony+","+" Má výhled na moře ? "+hasSeaView+","+" Cena za noc:"+pricePerNight+" Kč";
+    }
+
 }

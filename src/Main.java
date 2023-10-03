@@ -35,6 +35,8 @@ public class Main {
                 2400
         );
 
+        System.out.println(room1);
+
 //endregion
 
 //region Guest
@@ -45,7 +47,11 @@ public class Main {
         Guest guest2 = new Guest(
                 "Jan Dvořáček",
                 LocalDate.of(1995,5,5)
-        );
+                );
+
+
+
+
 //endregions
 
 //region Bookings
