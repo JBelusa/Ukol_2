@@ -35,9 +35,9 @@ public class Main {
                 2400
         );
 
-        System.out.println(room1);
-        System.out.println(room2);
-        System.out.println(room3);
+//        System.out.println(room1);
+//        System.out.println(room2);
+//        System.out.println(room3);
 
 
 //endregion
@@ -57,6 +57,19 @@ public class Main {
 
 //endregions
 
+        ArrayList<Guest> guestList1 = new ArrayList<>();
+        guestList1.add(guest1);
+        guestList1.add(guest2);
+
+//region Guest List
+    Booking booking3 = new Booking(guestList1,
+            room3,
+            LocalDate.of(2021,7,19),
+            LocalDate.of(2021,7,26),
+            "pracovní");
+
+
+//endregion
 //region Bookings
         Booking booking1 = new Booking(room1,
                 guest1,
@@ -76,21 +89,39 @@ public class Main {
 
 //endregion
 
+
+//region print puvodni
+
     List<Booking> listOfbookings = new ArrayList<>();
 
     listOfbookings.add(booking1);
-
-    System.out.println("Pokoj číslo "
-                    +listOfbookings.get(0).getRoom().getRoomNumber()
-                    +" rezervován od "
-                    +listOfbookings.get(0).getStartDate()
-                    +" do "
-                    +listOfbookings.get(0).getEndDate()
-                    +" na jméno "
-                    +listOfbookings.get(0).getGuest().getGuestName()
-            );
+//
+//    System.out.println("Pokoj číslo "
+//                    +listOfbookings.get(0).getRoom().getRoomNumber()
+//                    +" rezervován od "
+//                    +listOfbookings.get(0).getStartDate()
+//                    +" do "
+//                    +listOfbookings.get(0).getEndDate()
+//                    +" na jméno "
+//                    +listOfbookings.get(0).getGuest().getGuestName()
+//            );
 //-------------------
     listOfbookings.add(booking2);
+//        System.out.println("Pokoj číslo "
+//                +listOfbookings.get(1).getRoom().getRoomNumber()
+//                +" rezervován od "
+//                +listOfbookings.get(1).getStartDate()
+//                +" do "
+//                +listOfbookings.get(1).getEndDate()
+//                +" na jméno "
+//                +listOfbookings.get(1).getGuest().getGuestName()
+//                +" a "
+//                +listOfbookings.get(1).getSecondguest().getGuestName()
+//        );
+
+
+//endregion
+        listOfbookings.add(booking3);
         System.out.println("Pokoj číslo "
                 +listOfbookings.get(1).getRoom().getRoomNumber()
                 +" rezervován od "
@@ -98,12 +129,10 @@ public class Main {
                 +" do "
                 +listOfbookings.get(1).getEndDate()
                 +" na jméno "
-                +listOfbookings.get(1).getGuest().getGuestName()
+                +guestList1.get(1).getGuestName()
                 +" a "
-                +listOfbookings.get(1).getSecondguest().getGuestName()
+                +guestList1.get(0).getGuestName()
         );
-
-
 
 
 

@@ -1,6 +1,9 @@
 package com.engeto.rooms;
 
+import com.sun.tools.javac.Main;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Booking {
@@ -11,6 +14,9 @@ public class Booking {
     private LocalDate startDate;
     private LocalDate endDate;
     private String vacationType;
+
+    private ArrayList<Guest> guestList;
+
 
 
 //region Booking Constructors
@@ -40,7 +46,16 @@ public class Booking {
         this.endDate = endDate;
         this.vacationType = vacationType;
     }
-//endregion
+
+    public Booking(ArrayList<Guest> guestList,Room room, LocalDate startDate, LocalDate endDate, String vacationType) {
+        this.guestList =guestList;
+        this.room = room;
+        this.startDate = startDate;
+        this.endDate = endDate;
+        this.vacationType = vacationType;
+    }
+
+    //endregion
 
 //region Booking Getters and Setters
 
@@ -93,6 +108,13 @@ public class Booking {
         this.vacationType = vacationType;
     }
 
+    public ArrayList<Guest> getGuestList() {
+        return guestList;
+    }
+
+    public void setGuestList(ArrayList<Guest> guestList) {
+        this.guestList = guestList;
+    }
 //endregion
 
 
