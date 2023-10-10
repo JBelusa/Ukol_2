@@ -9,13 +9,11 @@ import java.util.List;
 public class Booking {
     private Room room;
     private Guest guest;
-    private Guest secondguest;
-    private Guest thirdguest;
-    private LocalDate startDate;
+     private LocalDate startDate;
     private LocalDate endDate;
     private String vacationType;
 
-    private ArrayList<Guest> guestList;
+    private ArrayList<Guest> guestList = new ArrayList<>();
 
 
 
@@ -29,25 +27,9 @@ public class Booking {
         this.vacationType = vacationType;
     }
 
-    public Booking(Room room, Guest guest, Guest secondguest, LocalDate startDate, LocalDate endDate, String vacationType) {
-        this.room = room;
-        this.guest = guest;
-        this.secondguest = secondguest;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.vacationType = vacationType;
-    }
 
-    public Booking(Room room, Guest guest, Guest secondguest,Guest thirdguest, LocalDate startDate, LocalDate endDate, String vacationType) {
-        this.room = room;
+    public Booking(Guest guest,ArrayList<Guest> guestList,Room room, LocalDate startDate, LocalDate endDate, String vacationType) {
         this.guest = guest;
-        this.secondguest = secondguest;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.vacationType = vacationType;
-    }
-
-    public Booking(ArrayList<Guest> guestList,Room room, LocalDate startDate, LocalDate endDate, String vacationType) {
         this.guestList =guestList;
         this.room = room;
         this.startDate = startDate;
@@ -75,13 +57,7 @@ public class Booking {
         this.guest = guest;
     }
 
-    public Guest getSecondguest() {
-        return secondguest;
-    }
 
-    public void setSecondguest(Guest secondguest) {
-        this.secondguest = secondguest;
-    }
 
 
     public LocalDate getStartDate() {
