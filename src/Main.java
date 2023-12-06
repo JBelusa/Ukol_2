@@ -6,7 +6,6 @@ import java.util.List;
 
 import static com.engeto.rooms.BookingManager.*;
 
-
 public class Main {
     public static void main(String[] args) {
 //region Úkol lekce 2
