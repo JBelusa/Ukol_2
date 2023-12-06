@@ -1,10 +1,12 @@
 package com.engeto.rooms;
 
+import java.util.ArrayList;
+
 public class Room {
     private int roomNumber;
     private int numberOfBeds;
     private boolean hasBalcony;
-    private boolean  hasSeaView;
+    private boolean hasSeaView;
     private int pricePerNight;
 
 
@@ -38,16 +40,21 @@ public class Room {
         this.numberOfBeds = numberOfBeds;
     }
 
-    public boolean isHasBalcony() {
-        return hasBalcony;
+    //Přepsání TRUE/FALSE na Ano/Ne pro balkón
+    public String hasBalcony() {
+        if (hasBalcony) {
+            return "Ano";
+        }
+        return "Ne";
     }
 
     public void setHasBalcony(boolean hasBalcony) {
         this.hasBalcony = hasBalcony;
     }
 
-    public boolean isHasSeaView() {
-        return hasSeaView;
+    //Přepsání TRUE/FALSE na Ano/Ne pro výhled na moře
+    public String hasSeaView() {
+        return hasSeaView ? "Ano" : "Ne";
     }
 
     public void setHasSeaView(boolean hasSeaView) {
@@ -61,13 +68,15 @@ public class Room {
     public void setPricePerNight(int pricePerNight) {
         this.pricePerNight = pricePerNight;
     }
+
+
 //endregion
 
-   
+
     @Override
     public String toString() {
-        return //"Firemní počítač: "+
-                "Číslo pokoje:"+roomNumber+","+" Počet postelí "+numberOfBeds+","+" Má balkón? "+hasBalcony+","+" Má výhled na moře ? "+hasSeaView+","+" Cena za noc:"+pricePerNight+" Kč";
+        return
+                "Číslo pokoje:" + roomNumber + "," + " Počet postelí " + numberOfBeds + "," + " Má balkón? " + hasBalcony() + "," + " Má výhled na moře ? " + hasSeaView() + "," + " Cena za noc:" + pricePerNight + " Kč";
     }
 
 }
